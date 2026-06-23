@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1r83RMBol6Nf4b5xcGWsZkUCp_8bOEQbd
 """
 
-
+import os
 import random
 from datetime import datetime
 import smtplib
