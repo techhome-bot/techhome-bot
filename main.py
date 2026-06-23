@@ -302,4 +302,7 @@ async def main():
     print("🤖 TECHHOME BOT ACTIVO")
     await app.updater.start_polling()
 
-await main()
+import asyncio
+
+if __name__ == "__main__":
+    asyncio.run(main())
