@@ -32,7 +32,7 @@ EMAIL = os.environ.get("EMAIL")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 SHEET_ID = os.environ.get("SHEET_ID")
-CREDENTIALS_FILE = os.environ.get("CREDENTIALS_FILE")
+CREDENTIALS_FILE = "techhome-bot-2b0753264573.json"
 
 scope = [
     "https://spreadsheets.google.com/feeds",
