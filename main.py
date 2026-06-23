@@ -37,12 +37,13 @@ CREDENTIALS_FILE = os.environ.get("CREDENTIALS_FILE")
 
 scope = [
     "https://spreadsheets.google.com/feeds",
-    "https://www.googleapis.com/auth/drive"
+    "https://www.googleapis.com/auth/drive",
+]
 
 creds = ServiceAccountCredentials.from_json_keyfile_name(
     CREDENTIALS_FILE, scope
 )
-]
+
 client = gspread.authorize(creds)
 sheet = client.open_by_key(SHEET_ID).sheet1
 
