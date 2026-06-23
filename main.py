@@ -13,8 +13,7 @@ from datetime import datetime
 import smtplib
 from email.mime.text import MIMEText
 
-import nest_asyncio
-nest_asyncio.apply()
+
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
