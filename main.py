@@ -38,7 +38,7 @@ CREDENTIALS_FILE = os.environ.get("CREDENTIALS_FILE")
 scope = [
     "https://spreadsheets.google.com/feeds",
     "https://www.googleapis.com/auth/drive"
-]creds = ServiceAccountCredentials.from_json_keyfile_name(
+creds = ServiceAccountCredentials.from_json_keyfile_name(
     CREDENTIALS_FILE, scope
 )
 
