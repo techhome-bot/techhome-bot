@@ -1,4 +1,4 @@
-# 🤖 TECHHOME Bot – Atención al Cliente
+# 🤖 TECHHOME Bot – Atención al Cliente.
 
 Bot de Telegram para **TECHHOME**, diseñado para gestionar solicitudes de clientes de forma automática y organizada.
 
