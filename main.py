@@ -15,8 +15,11 @@ from email.mime.text import MIMEText
 
 
 
+import json
+import os
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2.service_account import Credentials
+
 
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import (
@@ -39,9 +42,8 @@ scope = [
     "https://www.googleapis.com/auth/drive",
 ]
 
-creds = ServiceAccountCredentials.from_json_keyfile_name(
-    CREDENTIALS_FILE, scope
-)
+info = json.loads(os.environ["GOOGLE_CREDENTIALS_JSON"])
+creds = Credentials.from_service_account_info(info, scopes=scope)
 
 client = gspread.authorize(creds)
 sheet = client.open_by_key(SHEET_ID).sheet1
