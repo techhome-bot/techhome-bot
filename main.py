@@ -297,12 +297,5 @@ app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handler))
 
-async def main():
-    print("BOT ACTIVO")
-    await app.run_polling()
-   
-
-import asyncio
-
-if __name__ == "__main__":
-    asyncio.run(main())
+print("🤖 TECHHOME BOT ACTIVO")
+app.run_polling()
